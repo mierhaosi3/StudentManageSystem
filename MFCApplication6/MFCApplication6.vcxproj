@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{AC7324E4-C6D1-4309-ADC6-FEEDE6F1A90D}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>MFCApplication6</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BarChart.h" />
+    <ClInclude Include="ChartCtrl\ChartAxis.h" />
+    <ClInclude Include="ChartCtrl\ChartAxisLabel.h" />
+    <ClInclude Include="ChartCtrl\ChartBalloonLabel.h" />
+    <ClInclude Include="ChartCtrl\ChartBarSerie.h" />
+    <ClInclude Include="ChartCtrl\ChartCandlestickSerie.h" />
+    <ClInclude Include="ChartCtrl\ChartCrossHairCursor.h" />
+    <ClInclude Include="ChartCtrl\ChartCtrl.h" />
+    <ClInclude Include="ChartCtrl\ChartCursor.h" />
+    <ClInclude Include="ChartCtrl\ChartDateTimeAxis.h" />
+    <ClInclude Include="ChartCtrl\ChartDragLineCursor.h" />
+    <ClInclude Include="ChartCtrl\ChartFont.h" />
+    <ClInclude Include="ChartCtrl\ChartGanttSerie.h" />
+    <ClInclude Include="ChartCtrl\ChartGradient.h" />
+    <ClInclude Include="ChartCtrl\ChartGrid.h" />
+    <ClInclude Include="ChartCtrl\ChartLabel.h" />
+    <ClInclude Include="ChartCtrl\ChartLegend.h" />
+    <ClInclude Include="ChartCtrl\ChartLineSerie.h" />
+    <ClInclude Include="ChartCtrl\ChartLogarithmicAxis.h" />
+    <ClInclude Include="ChartCtrl\ChartMouseListener.h" />
+    <ClInclude Include="ChartCtrl\ChartPointsArray.h" />
+    <ClInclude Include="ChartCtrl\ChartPointsSerie.h" />
+    <ClInclude Include="ChartCtrl\ChartScrollBar.h" />
+    <ClInclude Include="ChartCtrl\ChartSerie.h" />
+    <ClInclude Include="ChartCtrl\ChartSerieBase.h" />
+    <ClInclude Include="ChartCtrl\ChartSeriesMouseListener.h" />
+    <ClInclude Include="ChartCtrl\ChartStandardAxis.h" />
+    <ClInclude Include="ChartCtrl\ChartString.h" />
+    <ClInclude Include="ChartCtrl\ChartSurfaceSerie.h" />
+    <ClInclude Include="ChartCtrl\ChartTitle.h" />
+    <ClInclude Include="ChartCtrl\ChartXYSerie.h" />
+    <ClInclude Include="ChartCtrl\PointsOrdering.h" />
+    <ClInclude Include="ChartCtrl_source\PointsOrdering.h" />
+    <ClInclude Include="Enroll.h" />
+    <ClInclude Include="LineChart.h" />
+    <ClInclude Include="login.h" />
+    <ClInclude Include="MFCApplication6.h" />
+    <ClInclude Include="MFCApplication6Dlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TwoChart.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BarChart.cpp" />
+    <ClCompile Include="ChartCtrl\ChartAxis.cpp" />
+    <ClCompile Include="ChartCtrl\ChartAxisLabel.cpp" />
+    <ClCompile Include="ChartCtrl\ChartBarSerie.cpp" />
+    <ClCompile Include="ChartCtrl\ChartCandlestickSerie.cpp" />
+    <ClCompile Include="ChartCtrl\ChartCrossHairCursor.cpp" />
+    <ClCompile Include="ChartCtrl\ChartCtrl.cpp" />
+    <ClCompile Include="ChartCtrl\ChartCursor.cpp" />
+    <ClCompile Include="ChartCtrl\ChartDateTimeAxis.cpp" />
+    <ClCompile Include="ChartCtrl\ChartDragLineCursor.cpp" />
+    <ClCompile Include="ChartCtrl\ChartFont.cpp" />
+    <ClCompile Include="ChartCtrl\ChartGanttSerie.cpp" />
+    <ClCompile Include="ChartCtrl\ChartGradient.cpp" />
+    <ClCompile Include="ChartCtrl\ChartGrid.cpp" />
+    <ClCompile Include="ChartCtrl\ChartLegend.cpp" />
+    <ClCompile Include="ChartCtrl\ChartLineSerie.cpp" />
+    <ClCompile Include="ChartCtrl\ChartLogarithmicAxis.cpp" />
+    <ClCompile Include="ChartCtrl\ChartPointsSerie.cpp" />
+    <ClCompile Include="ChartCtrl\ChartScrollBar.cpp" />
+    <ClCompile Include="ChartCtrl\ChartSerie.cpp" />
+    <ClCompile Include="ChartCtrl\ChartStandardAxis.cpp" />
+    <ClCompile Include="ChartCtrl\ChartSurfaceSerie.cpp" />
+    <ClCompile Include="ChartCtrl\ChartTitle.cpp" />
+    <ClCompile Include="ChartCtrl\ChartXYSerie.cpp" />
+    <ClCompile Include="Enroll.cpp" />
+    <ClCompile Include="LineChart.cpp" />
+    <ClCompile Include="login.cpp" />
+    <ClCompile Include="MFCApplication6.cpp" />
+    <ClCompile Include="MFCApplication6Dlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TwoChart.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCApplication6.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ChartCtrl\ChartBalloonLabel.inl" />
+    <None Include="ChartCtrl\ChartLabel.inl" />
+    <None Include="ChartCtrl\ChartPointsArray.inl" />
+    <None Include="ChartCtrl\ChartSerieBase.inl" />
+    <None Include="resource.hm" />
+    <None Include="res\MFCApplication6.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\MFCApplication6.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
